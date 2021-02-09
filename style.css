@@ -1,0 +1,6 @@
+.addborder{
+    border:1px;
+    color: rgb(26, 93, 133);
+    border-style: solid;
+    padding: 5px;
+}
