@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_anketa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Анкета</h1>
+    </div>
+    <div align="center">
+        <u><h3>
+        Заповніть анкету для прийому в книжне царство
+        </h3></u>
+        <br>
+    </div>
+    <div class="block1">
+        <form>
+        Введіть ім'я: <input name="name" size="40" maxlength="40" placeholder="ПІБ"><br><br>
+        Введіть пароль: <input name="password" size="18" maxlength="18">
+        </form>
+        <form>
+        Стать: <input type="checkbox" name="sex" value="Чоловік"> Чоловік
+        <input type="checkbox" name="sex" value="Жінка"> Жінка
+        </form>
+        <form>
+            Рід заннять:<br><br>
+            <input type="checkbox" name="student" value="Студент"> Студент<br>
+            <input type="checkbox" name="schooler" value="Учень"> Учень<br>
+            <input type="checkbox" name="aspirant" value="Аспірант"> Аспірант<br>
+            <input type="checkbox" name="worker" value="Працюю"> Працюю<br>
+            <input type="checkbox" name="notworker" value="Не працюю"> Не працюю<br><br>
+        </form>
+        <form>
+            Які книги любиш читати:<br>
+            <select name="books" size="3">
+                <option> Пригоди
+                <option> Фентезі
+                <option> Екшн
+            </select>
+        </form>
+        <br>
+        <form>
+            Що читаєш зараз?<br>
+            Поділись враженнями:<br>
+            <textarea name="info" cols="70" rows="10" placeholder="Починай тут!" title="Сміливіше!!"></textarea>
+        </form>
+        <form>
+            <a href="index.html">Перехід на основну сторінку</a>
+            <br><br>
+            <input type="reset"> <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
