@@ -9,11 +9,16 @@ btn.addEventListener('click', function(){
      
         if (validateEmail(email)) {
             if (password == password2){
-                alert(`login: ${login}, email: ${email}, password ${password} , ${password2}`)
+                $( function() {
+                  $( "#dialog_s" ).dialog();
+                } );
             }
-           else alert("Passwords not the same")
+           else{ alert("Passwords not the same")
+           $("#dialog_f").dialog();
+          }
         } else {
           alert(email + " is not valid email");
+          $("#dialog_f").dialog();
         }
         return false;
         

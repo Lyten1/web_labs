@@ -121,10 +121,8 @@
        
         // при клике по кнопке #show-modal
         document.querySelector('#show-modal').addEventListener('click', function (e) {
-          var modal = $modal();
-          
-          // отобразим модальное окно
-         
+          var modal = $modal();      
+          // отобразим модальное окно 
           modal.show();
         });
       })();
