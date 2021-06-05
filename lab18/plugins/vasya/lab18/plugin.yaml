@@ -1,0 +1,11 @@
+plugin:
+    name: 'vasya.lab18::lang.plugin.name'
+    description: 'vasya.lab18::lang.plugin.description'
+    author: vasya
+    icon: oc-icon-angellist
+    homepage: ''
+navigation:
+    lab18:
+        label: 'vasya.lab18::lang.plugin.name'
+        url: vasya/lab18/controlerlab18
+        icon: icon-apple

@@ -1,0 +1,4 @@
+title: ControlerLab18
+modelClass: Vasya\Lab18\Models\Table
+toolbar:
+    buttons: reorder_toolbar

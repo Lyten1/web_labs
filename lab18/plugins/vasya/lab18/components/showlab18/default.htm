@@ -1,0 +1,76 @@
+{% set myCompany=__SELF__.myCompany %}
+{% set PhoneBase=__SELF__.PhoneBases %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+{% framework %}
+
+<h1>Test Lab18 {{ myCompany }}</h1>
+
+<p>This is the default markup for component ShowLab18</p>
+
+<small>You can delete this file if you want</small>
+
+<table border="1" width="100%">
+	{% for item in PhoneBase %}
+<tr>
+	<td>{{ item.id }}</td> 
+	<td>{{ item.name }}</td> 
+	<td>{{ item.phone }}</td>
+</tr>
+	{% endfor %}
+</table>
+
+<br>
+<div class="jumbotron">
+	<div class="container">
+
+	</div>
+</div>
+<div class="container">
+	<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 600px;">
+			<h4 class="card-title mt-3 text-center">LAB 18</h4>
+
+
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				add
+			  </button>
+			  
+			  <!-- Modal -->
+			  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Введіть дані</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+						Name:<input id="name" name="name" type="" >
+						<br><br>Phone:<input id="phone" name="phone" type="" >
+						<br><br>test:<input id="test" name="test">
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary action-button" data-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary action-button" data-request="onSaveData"  data-request-success="alert('Yay!')">Save changes</button>
+					</div>
+				  </div>
+				</div
+
+
+
+		</article>
+	</div>
+
+</div>
+
+
+

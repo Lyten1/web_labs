@@ -1,0 +1,12 @@
+list: $/vasya/lab18/models/table/columns.yaml
+modelClass: Vasya\Lab18\Models\Table
+title: ControlerLab18
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vasya/lab18/controlerlab18/update/:id'

@@ -1,0 +1,10 @@
+fields:
+    name:
+        label: 'vasya.lab18::lang.name'
+        span: auto
+        required: 1
+        type: text
+    phone:
+        label: 'vasya.lab18::lang.phone'
+        span: auto
+        type: text

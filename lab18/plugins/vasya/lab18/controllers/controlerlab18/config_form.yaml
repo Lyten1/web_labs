@@ -1,0 +1,10 @@
+name: ControlerLab18
+form: $/vasya/lab18/models/table/fields.yaml
+modelClass: Vasya\Lab18\Models\Table
+defaultRedirect: vasya/lab18/controlerlab18
+create:
+    redirect: 'vasya/lab18/controlerlab18/update/:id'
+    redirectClose: vasya/lab18/controlerlab18
+update:
+    redirect: vasya/lab18/controlerlab18
+    redirectClose: vasya/lab18/controlerlab18
